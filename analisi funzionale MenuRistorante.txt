@@ -1,0 +1,28 @@
+Il cliente desidera un software per la gestione del menu di un ristorante.
+
+L'utente deve avere la possibilità di:
+1)	inserire nel menu i piatti: ogni piatto deve essere descritto da nome, prezzo e categoria; le possibili categorie sono "Antipasti", "Primi piatti", "Secondi piatti e contorni", "Bevande", "Dessert”;
+2)	visualizzare le informazioni dei piatti del menu, con le opzioni:
+i.	visualizza tutti i piatti;
+ii.	visualizza i piatti di una specifica categoria.
+
+
+Analisi funzionale:
+1)Inserimento dei un piatto nel menu:
+L'utente deve essere in grado di inserire un nuovo piatto all'interno del Menu.
+1.a.Per ogni Piatto, l'utente deve specificare il nome, il prezzo e la categoria; le 5 categorie sono : Antipasti ,Primi Piatti ,Secondi piatti e contorni ,Bevande, Dessert.
+1.b.Ogni volta che l'utente inserisce un nuovo piatto, questi viene inserito all'interno del Menu, nella propria categoria.
+1.c.Viene chiesto all'utente se vuole inserire un altro piatto, se si quindi si ritorna al punto 1.a. , in caso contrario si torna al Menu Principale.
+
+2)Visualizzazione del Menu: 
+L'utente deve poter visualizzare il Menu con tutti i piatti inseriti:
+2a. Si chiede all'utente che tipo di piatto vuole visualizzare:
+	2.a.1. Antipasti;
+	2.a.2. Primi Piatti;
+	2.a.3. Secondi Piatti e Contorni;
+	2.a.4. Bevante;
+	2.a.5. Dessert:
+	2.a.6. Tutti i piatti presenti nel Menu;
+2.b. L'utente visualizza i piatti presenti in ciascuna categoria con il nome e il prezzo di ognuno; se clicca una categoria che non ha piatti presenti al suo interno, uscirà un messaggio con scritto "Nessun Piatto presente all'interno di questa Categoria".
+2.c. Se l'utente sceglie di visualizzare tutti i piatti presenti nel Menu, questi saranno ordinati per categoria.
+2.4. Si esce dal menu.

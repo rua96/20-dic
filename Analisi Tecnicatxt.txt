@@ -1,0 +1,76 @@
+Analisi Tecnica:
+Creazione di 7 classi;
+
+Una classe astratta Genitore --> Piatti
+5 classi figlie --> PrimiPiatti , Antipasti, SecondiContorni , Bevande, Dessert.
+Classe Main
+
+public abstract class Piatti {
+	protected String nome, categoria;
+	protected double prezzo;
+	   
+    Piatti( String n, double p){
+    	nome=n; prezzo=p;
+    	}
+    
+    public String getNome() {
+    	return nome;
+   }
+    public String getCategoria() {
+    	return categoria;
+   }
+    public double getPrezzo() {
+    	return prezzo;
+   }
+    
+    
+    public String toString() {
+        return " Nome : " + nome + ", Prezzo : " + prezzo + "€." ;
+}
+
+
+
+public class "Nome Classe Figlia" extends Piatti {
+	 "Nome Classe Figlia" ( String nome, double prezzo){
+	    	super(nome,prezzo);
+	    	}
+	   public String toString() {
+           return "{nome categoria} : " + super.toString();
+       }
+}
+
+
+
+
+main() {
+
+
+ Cinque Array differenti per tipologia di piatto: PrimiPiatti , Antipasti, SecondiContorni , Bevande, Dessert.
+
+
+
+  Menu
+
+
+     case 1: inserimento Piatto
+
+      1.a
+
+	inserimento tipologia piatto:
+viene chiesto che tipo di piatto da inserire tramite uno switch ": 1 per antipasti, 2 per primi piatti, 3 per secondi o contorni, 4 per bevande e 5 per dessert. 
+
+     1.b. 
+	una volta inserito il piatto, questi va inserito all'interno di un array.  
+Per questo vanno creati 5 array, uno per ogni categoria.
+1.c. subito dopo si riapre il menu, se si vuole inserire di nuovo un piatto bisogna inserire nuovamente 1.
+
+	case 2: Visualizzare Piatto
+2.a
+	viene chiesto che tipo di piatto visualizzare tramite uno switch
+1 per antipasti, 2 per primi piatti, 3 per secondi o contorni, 4 per bevande, 5 per dessert, 6 per tutti i piatti.
+
+2.b. L'utente visualizza i piatti presenti in ciascuna categoria con il nome e il prezzo di ognuno; se clicca una categoria che non ha piatti presenti al suo interno, uscirà un messaggio con scritto "Nessun Piatto presente all'interno di questa Categoria". 
+
+2.c. Se l'utente sceglie di visualizzare tutti i piatti presenti nel Menu, questi saranno ordinati per categoria.
+ 
+
